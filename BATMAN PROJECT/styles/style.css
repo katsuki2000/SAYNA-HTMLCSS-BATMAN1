@@ -4,8 +4,6 @@ body{
     font-family: 'Space Grotesk', sans-serif;
 }
 
-font-family: 'Rajdhani', sans-serif;
-font-family: 'Space Grotesk', sans-serif;
 
 *{
     margin: 0;
@@ -159,3 +157,143 @@ hero .titre{
     height: 800px;
     background-repeat: no-repeat;
 }
+
+/*Design de la partie multimedia*/
+#multimedia .slider-multimedia{
+    display: flex;
+    width: 70%;
+    margin: 40px auto;
+}
+
+#multimedia .slider-image{
+    width: 100%;
+}
+
+#multimedia .slider-content{
+    padding:  0 15px;
+    background: linear-gradient(to right, #eddebf 30%, #19587D 70%);
+    border-top-right-radius:  20px;
+    border-bottom-right-radius: 20px;
+}
+
+#multimedia p{
+    font-size: 14px;
+}
+
+#multimedia button.right{
+    right: -90%;
+}
+
+#multimedia button{
+    position: relative;
+    top:155px;
+    background: none;
+    border: none;
+}
+
+#multimedia .yellow{
+    color:#FFFF00
+}
+
+/*design de la partie Contact--Formulaire*/
+#contact{
+    background-color: darkslategrey;
+    padding: 70px 0;
+}
+
+#contact .form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contact h{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+} 
+
+#contact .titre{
+    display: block;
+    margin: 27px 0;
+}
+
+#contact input[type='email'], textarea{
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    width: 80%;
+    border-bottom: 2px solid rgb(120, 120, 120); 
+    background-color: transparent;
+ }
+
+ #contact .icon img {
+    transform: rotate(90deg);
+    width: 20px;
+ }
+
+ #contact .news{
+    margin-top: 15px;
+    margin: 15px 0;
+    border-bottom: 2px solid rgb(120, 120, 120);
+ }
+
+::-webkit-input-placeholder{
+    color: #FFFF00;
+    font-size: 15px;
+}
+
+.btn-group{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto 0;
+}
+
+#contact input[type='radio']{
+    opacity: 0;
+}
+
+#contact .btn-group label{
+    width: auto;
+    margin: 0 auto;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid;
+    border-image: linear-gradient(
+        69deg,red,blue
+    )1;
+
+    font-size: 15px ;
+}
+
+#contact input[type='submit']{
+    display: block;
+    width: 230px;
+    margin: 25px auto;
+    padding: 10px 0;
+    cursor: pointer;   
+}
+
+#citations{
+    width: 90%;
+}
+
+#citations .citation-carte{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#citations .citation-auteur{
+    padding-top: 30px;
+    font-size: 14px;
+    font-family: 'radjhani', sans-serif;
+}
+
+#citations .guillemet-close{
+    float:right
+}
+
+
+
+
