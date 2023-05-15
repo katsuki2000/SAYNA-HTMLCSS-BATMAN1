@@ -197,12 +197,12 @@ hero .titre{
 
 /*design de la partie Contact--Formulaire*/
 #contact{
-    background-color: darkslategrey;
-    padding: 70px 0;
-}
+        background: linear-gradient(to bottom right, #4a4a40, #081d2a);
+        padding: 5% 10%;
+    }
 
 #contact .form{
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -295,5 +295,43 @@ hero .titre{
 }
 
 
+.rond{
+    display: flex;
+    justify-content: center;
+}
+.dot{
+    margin: 0 2px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50px;
+    border: 2px solid rgb(103, 103, 207);
+    align-items: center;
+}
+/* footer */
+footer{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 200px;
+    font-size: smaller;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1%;
+}
+.copyright img{
+    width: 34px;
+    height: 34px;
+}
+
+/* footer icons */
+.credit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1%;
+}
 
 
