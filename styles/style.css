@@ -1,0 +1,391 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+button{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;    
+}
+
+:root{
+    --yellow-color: #FFFF00;
+    --yellow-light: #F8F184;
+    --blue-color: #19587D;
+    --red-color: #B11313;
+    --gradient-black: #0D0E09;
+    --gradient-white: #eddebf48;
+    --gradient-red: #8900092d;
+    --gry-color: #C4C4C4;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+}
+
+/*Design de la navigation*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+nav ul a{
+    color: var(--white-color);
+    font-size: 30px;
+    font-family: 'Rajdhani', sans-serif;
+    text-transform: uppercase;
+}
+
+nav ul a:hover{
+    color: #FFFF00;
+}
+
+/* design de la partie en-tête hero*/
+#hero{
+    background-image: url(../assets/Illustrations/Bathome1.png);
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color:#19587D;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+/* design de la section batman-personnage*/
+.batman-personnage{
+    display: flex;
+    justify-content: space-between;
+}
+
+hero .titre{
+    margin: 20px 0;
+}
+
+
+/*design des deux premiers boutons*/
+.btn{
+    text-decoration: none;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 15px 40px;
+    margin-top: 15px; 
+    margin-left: 20px;
+    color: #FFFFFF; 
+    background: linear-gradient(
+        80deg,var(--gradient-white),var(--gradient-red)
+    );
+    box-shadow: #000000 5px 5px 60px ;
+}
+
+#hero .flèche{
+    display: block;
+    margin: 0 auto;
+    margin-top: 325px;
+}
+
+.scroll {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    position:fixed;
+    right: 50px;
+    top: 250px;
+}
+
+.scroll .social{
+    margin-top: 15px;
+}
+
+.title{
+    font-weight: bold;
+}
+
+.description{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    font-size: 22px;
+}
+
+.sous-titre{
+    text-align: center;
+}
+
+.sous-titre p{
+    margin: 0;
+}
+
+/*l'image sous justice league*/
+.justiciers{
+    background-image: url(../assets/Illustrations/Bathome11.png);
+    height: 800px;
+    background-repeat: no-repeat;
+}
+
+/*Design de la partie multimedia*/
+#multimedia .slider-multimedia{
+    display: flex;
+    width: 70%;
+    margin: 40px auto;
+}
+
+#multimedia .slider-image{
+    width: 100%;
+}
+
+#multimedia .slider-content{
+    padding:  0 15px;
+    background: linear-gradient(to right, #eddebf 30%, #19587D 70%);
+    border-top-right-radius:  20px;
+    border-bottom-right-radius: 20px;
+}
+
+#multimedia p{
+    font-size: 14px;
+}
+
+#multimedia button.right{
+    right: -90%;
+}
+
+#multimedia button{
+    position: relative;
+    top:155px;
+    background: none;
+    border: none;
+}
+
+#multimedia .yellow{
+    color:#FFFF00
+}
+
+/*design de la partie Contact--Formulaire*/
+#contact{
+        background: linear-gradient(to bottom right, #4a4a40, #081d2a);
+        padding: 5% 10%;
+    }
+
+#contact .form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+#contact h{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+} 
+
+#contact .titre{
+    display: block;
+    margin: 27px 0;
+}
+
+#contact input[type='email'], textarea{
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    width: 80%;
+    border-bottom: 2px solid rgb(120, 120, 120); 
+    background-color: transparent;
+ }
+
+ #contact .icon img {
+    transform: rotate(90deg);
+    width: 20px;
+ }
+
+ #contact .news{
+    margin-top: 15px;
+    margin: 15px 0;
+    border-bottom: 2px solid rgb(120, 120, 120);
+ }
+
+::-webkit-input-placeholder{
+    color: #FFFF00;
+    font-size: 15px;
+}
+
+.btn-group{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto 0;
+}
+
+#contact input[type='radio']{
+    opacity: 0;
+}
+
+#contact .btn-group label{
+    width: auto;
+    margin: 0 auto;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid;
+    border-image: linear-gradient(
+        69deg,red,blue
+    )1;
+
+    font-size: 15px ;
+}
+
+#contact input[type='submit']{
+    display: block;
+    width: 230px;
+    margin: 25px auto;
+    padding: 10px 0;
+    cursor: pointer;   
+}
+
+#citations{
+    width: 90%;
+}
+
+#citations .citation-carte{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#citations .citation-auteur{
+    padding-top: 30px;
+    font-size: 14px;
+    font-family: 'radjhani', sans-serif;
+}
+
+#citations .guillemet-close{
+    float:right
+}
+
+
+.rond{
+    display: flex;
+    justify-content: center;
+}
+.dot{
+    margin: 0 2px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50px;
+    border: 2px solid rgb(103, 103, 207);
+    align-items: center;
+}
+/* footer */
+footer{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 200px;
+    font-size: smaller;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1%;
+}
+.copyright img{
+    width: 34px;
+    height: 34px;
+}
+
+/* footer icons */
+.credit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1%;
+}
+
+
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    /* Styles for screens up to 768px wide */
+    .content {
+        width: 100%;
+    }
+
+    #multimedia .slider-multimedia {
+        width: 90%;
+    }
+
+    #contact .form {
+        width: 90%;
+    }
+
+    #citations .citation-carte {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Styles for screens up to 480px wide */
+    nav ul a {
+        font-size: 24px;
+    }
+
+    .content {
+        width: 100%;
+        padding-top: 100px;
+    }
+
+    #hero .flèche {
+        margin-top: 200px;
+    }
+
+    .description {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #multimedia .slider-multimedia {
+        width: 100%;
+    }
+
+    #contact .form {
+        width: 100%;
+    }
+
+    #citations .citation-carte {
+        width: 100%;
+    }
+}
